@@ -10,5 +10,5 @@ globalActivePower<-as.numeric(subsetdata$Global_active_power)
 
 datetime <- strptime(paste(subsetdata$Date, subsetdata$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
 png("plot2.png",width=480,height = 480)
-plot(datetime,globalActivePower, type = "1",xlab = " ",ylab = "Global Active power(kilowatts)")
+plot(datetime,globalActivePower, type = "l",xlab = " ",ylab = "Global Active power(kilowatts)")
 dev.off()
